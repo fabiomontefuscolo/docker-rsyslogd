@@ -28,6 +28,7 @@ RUN {                                                                           
         echo '*.* :omstdout:';                                                        \
     } > /etc/rsyslog.d/docker-cyrus.conf
 
+ENV SYSLOG_SOCK=/run/rsyslog/dev/log
 VOLUME /run
 
 COPY entrypoint.sh /entrypoint.sh
