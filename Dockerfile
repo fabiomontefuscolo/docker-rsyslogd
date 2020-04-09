@@ -16,7 +16,7 @@ RUN {                                                                           
         echo 'module(load="immark")';                                                 \
         echo 'module(load="imklog")';                                                 \
         echo '*.emerg :omusrmsg:*';                                                   \
-    } > /etc/rsyslog.conf                                                             \
+    } > /etc/rsyslogd.conf                                                             \
     && {                                                                              \
         echo 'module(load="imtcp")';                                                  \
         echo 'input(type="imtcp" port="514")';                                        \
